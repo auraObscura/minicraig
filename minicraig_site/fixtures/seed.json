@@ -1,0 +1,96 @@
+[
+  {
+    "model": "minicraig_site.category",
+    "pk": 1,
+    "fields": {
+      "c_name": "philosophy",
+      "c_description": "throw your thoughts and ideas into the digital void here!"
+    }
+  },
+  {
+    "model": "minicraig_site.category",
+    "pk": 2,
+    "fields": {
+      "c_name": "music",
+      "c_description": "share / discuss all sorts of music or the idea of music itself here"
+    }
+  },
+  {
+    "model": "minicraig_site.category",
+    "pk": 3,
+    "fields": {
+      "c_name": "books",
+      "c_description": "got some thoughts on a book you've read? toss them into the black hole of the internet here!"
+    }
+  },
+  {
+    "model": "minicraig_site.category",
+    "pk": 4,
+    "fields": {
+      "c_name": "fitness",
+      "c_description": "chuck the details of your journey, methods, or thoughts related to fitness into the infinitely dense collapsing neutron star of the interwebs here!"
+    }
+  },
+  {
+    "model": "minicraig_site.category",
+    "pk": 5,
+    "fields": {
+      "c_name": "spirituality",
+      "c_description": "want to do a dry run of your latest attempt at a cult origin pitch? feed it to the vicious anonymous sharks circling these chaotic cyber-waters!"
+    }
+  },
+  {
+    "model": "minicraig_site.post",
+    "pk": 1,
+    "fields": {
+      "title": "test1",
+      "text": "gajlk;fgjhnriagfkgjdskfjdjtriegnsdgsjfdksfjketjitfnfsfkj",
+      "category": 1
+    }
+  },
+  {
+    "model": "minicraig_site.post",
+    "pk": 2,
+    "fields": {
+      "title": "test2",
+      "text": "jgjrijignasdmgnakwejt",
+      "category": 2
+    }
+  },
+  {
+    "model": "minicraig_site.post",
+    "pk": 3,
+    "fields": {
+      "title": "test3",
+      "text": "asjgkabfiajgarinan",
+      "category": 3
+    }
+  },
+  {
+    "model": "minicraig_site.post",
+    "pk": 4,
+    "fields": {
+      "title": "test4",
+      "text": "tjiwarjyaijga2n43tiga",
+      "category": 4
+    }
+  },
+  {
+    "model": "minicraig_site.post",
+    "pk": 5,
+    "fields": {
+      "title": "test5",
+      "text": "asjriyji3tj43t8eh82hdsa",
+      "category": 5
+    }
+  },
+  {
+    "model": "minicraig_site.post",
+    "pk": 6,
+    "fields": {
+      "title": "test6",
+      "text": "asjrfdfdfdfdiyji3tj43t8eh82hdsa",
+      "category": 5
+    }
+  }
+]

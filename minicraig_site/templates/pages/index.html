@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block pagetitle %}minicraig~!{% endblock %}
+
+{% block pagecontent %}
+  <h3>discuss and/or rant about anything on minicraig discussion board~!</h3>
+  <h4>there are no accounts, comments, or direct reply features on this site, so if you choose to provide contact information in your posts, make sure you are prepared for the potential ramifications of this.  we hereby shed any legal responsibility for your personal decisions.</h4>
+  {% for category in categories %}
+    <h6><a href={% url 'cat_detail' category.pk %}>{{category}}</a></h6>
+  {% endfor %}
+  <a href={% url 'new_cat' %}><button>create a new discussion topic</button></a>
+{% endblock %}

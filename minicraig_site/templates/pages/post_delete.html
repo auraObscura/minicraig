@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+{% block pagetitle %}going nuclear?{% endblock %}
+{% block pagecontent %} 
+
+<h1>are you sure you want to delete this post~?</h1>
+<h2>once you do, it's gone forever...</h2>
+<h3>all things in life are fleeting</h3>
+<form method="POST" action=''>
+  {% csrf_token %}
+  <div class="form-group">
+  {{form.as_p}}
+  </div>
+  <input type="submit" value="delete">
+</form>
+<a href={% url 'post_detail' post.category.pk post.pk %}><button>nvm</button></a>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+
+{% block pagetitle %}behold, post~!{% endblock %}
+
+{% block pagecontent %}
+  <h3>{{post.title}}</h3>
+  <p>{{post.text}}</p>
+  
+  <a href={% url 'edit_post' post.category.pk post.pk %}><button>edit this post!</button></a>
+  <a href={% url 'cat_detail' post.category.pk %}><button>back to cat</button></a>
+{% endblock %}

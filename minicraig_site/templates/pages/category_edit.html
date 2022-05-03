@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+{% block pagetitle %}only constant is change{% endblock %}
+{% block pagecontent %} 
+
+<h1>edit this category~!</h1>
+<form method="POST" action=''>
+  {% csrf_token %}
+  <div class="form-group">
+  {{form.as_p}}
+  </div>
+  <input type="submit" value="update">
+</form>
+<a href={% url 'delete_cat' category.pk %}><button>delete</button></a>
+<a href={% url 'cat_detail' category.pk %}><button>nvm</button></a>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+{% block pagetitle %}well, spit it out~!{% endblock %}
+{% block pagecontent %} 
+
+<h1>create a new post~!</h1>
+<form method="POST" action=''>
+  {% csrf_token %}
+  <div class="form-group">
+  {{form.as_p}}
+  </div>
+  <input type="submit" value="save">
+</form>
+{% endblock %}

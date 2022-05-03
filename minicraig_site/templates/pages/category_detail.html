@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block pagetitle %}you wanna see them all?{% endblock %}
+
+{% block pagecontent %}
+  <h3>these are the {{category}} posts</h3>
+  <h4>{{category.c_description}}</h4>
+  {% for post in category.posts.all %}
+  <h5><a href={% url 'post_detail' category.pk post.pk %}>{{post}}</a></h5>
+  {% endfor %}
+
+  <a href={% url 'edit_cat' category.pk %}><button>edit this category</button></a>
+
+  <a href={% url 'new_post' category.pk %}><button>create a new post on this topic</button></a>
+{% endblock %}
